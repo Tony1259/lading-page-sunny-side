@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    padding: 5px 0;
+}
+h3{
+    font-size: 4rem;
+}
+p{
+    font-size: 2rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+.barlow{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+.fraunces{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.menu2{
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    z-index: -1;
+}
+
+.col-links{
+    padding: 2rem 0;
+}
+/* .col-links:hover{
+    background-color: white;
+    color: black;
+} */
+.col-links a:hover{
+    color: black;
+    background-color: white;
+}
+.transform-menu2{
+    transform: translateX(0);
+    z-index: 10;
+}
+.hamburger-lines{
+    display: none;
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.fixed-nav .menu a {
+    color: black;
+}
+.fixed-nav .menu .contact{
+    background-color: black;
+    color: white;
+}
+@media only screen and (max-width: 400px){
+    .sunny{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .creative{
+        padding-top:40% !important;
+    }
+
+    .hamburger-lines{
+        position: absolute;
+        display: block;
+        height: 28px;
+        width: 40px;
+        right: 2%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+   header{
+        position: fixed;
+        background-color: white;
+   }
+   header h2{
+    color: black;
+   }
+   .testimonials h6{
+    font-size: 5rem;
+   }
+   
+    .line{
+        display: block;
+        height: 5px;
+        width: 35px;
+        border-radius: 10px;
+        background: #0e2431;
+    }
+    .menu{
+        visibility: hidden;
+        overflow: hidden;
+        height: 0;
+    }
+    /* ONCLICK */
+    .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .transform-line1{
+        transform: rotate(45deg);
+        background-color: white;
+    }
+    .transform-line2{
+        transform: scaleY(0);
+        background-color: white;
+    }
+    .transform-line3{
+        transform: rotate(-45deg);
+        background-color: white;
+    }
+    /* END OF ONCLICK */
+      
+}
+
+/* START OF PAGE 1 */
+main{
+    width: 100%;
+}
+
+.page1{
+    min-height: 100vh;
+    min-width: 350px;
+    background: url(styles/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    
+}
+.page1 h1{
+    font-size: 8vh;
+    text-align: center;
+   align-self: center;
+   justify-self: center;
+    padding: 12% 0;
+}
+
+
+header{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+}
+
+header h2{
+    font-size: 4rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;   
+}
+
+
+
+.page1 a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3rem;
+    
+}
+
+.menu .contact{
+    background-color: rgb(255, 255, 255, 0.3);
+    height: 100%;
+    color: black;
+    border-radius: 50px;
+}
+
+
+
+/* END OF PAGE 1 */
+
+/* START OF PAGE 2 */
+.page2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    min-width: 350px;
+    flex-wrap: wrap;
+}
+.reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 50%;
+    min-height: 60vh;
+    min-width: 350px; 
+}
+
+.text{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    width: 50%;
+    max-width: 700px;
+    min-width: 350px;
+}
+
+
+
+.text a {
+    font-size: 2rem;
+}
+
+.glass{
+    background: url(styles/images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.egg{
+    background: url(styles/images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.flex-item2{
+    flex: 1;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cherry{
+    background:url(styles/images/desktop/image-graphic-design.jpg
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.orange{
+    background: url(styles/images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.text2{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    width: 50%;
+    max-width: 700px;
+    min-width: 350px;
+    padding-top: 20%;
+}
+.photography{
+    color: hsl(198, 62%, 26%);
+}
+.graphic{
+    color: hsl(167, 40%, 24%);
+}
+
+
+
+
+
+
+/*START OF TESTIMONIALS */
+.testimonials{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+    
+}
+
+.testimonials h6{
+    font-size: 4rem !important;
+    text-align: center;
+}
+
+.testimonials .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 5%;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    min-width: 350px;
+    text-align: center;
+    gap: 4rem;
+}
+
+
+.thomas{
+    background: url(styles/images/image-thomas.jpg);
+}
+.jennie{
+    background: url(styles/images/image-jennie.jpg);
+}
+.emily{
+    background: url(styles/images/image-emily.jpg);
+}
+.person-image{    
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+.testimonials h5{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name p{
+     font-size: 1.2rem;
+     color: gray;
+}
+/* END OF TESTIMONIALS */
+/* IMAGES */
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 350px;
+}
+.bottles{
+    background: url(styles/images/desktop/image-gallery-milkbottles.jpg);
+}
+.oranges{
+    background: url(styles/images/desktop/image-gallery-orange.jpg);
+}
+.cone{
+    background: url(styles/images/desktop/image-gallery-cone.jpg)
+}
+.sugar{
+    background: url(styles/images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.image{
+    flex: 1;
+    min-height: 61vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 200px;
+}
+/* END OF IMAGES */
+
+/* FOOTER */
+footer{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90d4c5;
+}
+footer h2{
+    font-size: 4rem;
+    color: #2c7566;
+}
+footer .container{
+    width: 25%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+    color: #2c7566;
+    font-size: 2rem;
+}
+.links a:hover{
+    color: white;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.social{
+    width: 30px;
+}
+.social:hover{
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+/* END OF FOOTER */
+
+
+
